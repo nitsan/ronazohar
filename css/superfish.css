@@ -16,7 +16,7 @@ nav{float:right; position: relative;}
 		overflow:hidden;
 		font-size:0;
 		line-height:0;
-		background:url(../images/menu-arrow.gif) center -44px;
+		/*background:url(../images/menu-arrow.gif) center -44px;*/
 		vertical-align:middle;
 	}
 .menu {list-style:none;}

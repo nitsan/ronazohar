@@ -597,7 +597,7 @@ table.schedules {
 footer {
     width: 100%;
     background: #eee;
-    padding: 36px 0 35px;
+    padding: 36px 0 70px;
 }
 
 .social-icons {
@@ -877,4 +877,22 @@ footer {
 }
 .pull-right{
     float: right;
+}
+.mobileShow {
+    display: none;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    left: 50%;
+    margin-left: -160px;
+    z-index: 12;
+}
+/* Smartphone Portrait and Landscape */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px){
+    .mobileShow {
+        display: block;
+    }
 }
