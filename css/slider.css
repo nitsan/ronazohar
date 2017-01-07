@@ -1,0 +1,89 @@
+#slides{
+	overflow:hidden;
+	position:relative;
+	width: 100%;
+}
+.slides_container{
+	height:422px;
+	overflow:hidden;
+	width:950px;
+}
+.slide{
+	height:auto;
+	width:950px;
+}
+
+/* Control Nav */
+.pagination{
+	background:#fff;
+	border:1px solid #cdcdcd;
+	border-radius:20px;
+	bottom:31px;
+	overflow:hidden;
+	padding:10px 14px 9px;
+	position:absolute;
+	right:0;
+	z-index:990;
+}
+	.pagination li{
+		float:left;
+		font-size:0px;
+		line-height:0;
+		margin-left:4px;
+		text-indent:-5000px;
+	}
+		.pagination li:first-child{margin-left:0;}
+		.pagination li a{
+			background: url(../images/pagination.png) -25px 0 no-repeat;
+			display:block;
+			height:21px;
+			width:21px;
+		}
+			.pagination li.current a, .pagination li a:hover{background-position:0 0;}
+			.pagination li.current a{cursor:default;}
+
+/* Caption */
+.caption{
+	z-index:990;
+	position:absolute;
+	top:0;
+	right:0;
+	width:446px;
+	padding-top:59px;
+	overflow:hidden;
+	font-weight:bold;
+	font-family:'Karla', sans-serif;
+	letter-spacing:-5px;
+	text-transform:uppercase;
+}
+	.caption span{text-transform:lowercase;}
+	.caption .row-1{font-size:110px; line-height:110px; color:#202021;}
+	.caption .row-2{font-size:80px; line-height:80px; color:#b0c715; margin-top:-22px;}
+	.caption .row-3{font-size:90px; line-height:90px; color:#832d5d; margin-top:-20px; letter-spacing:-6px;}
+	.caption .row-4{font-size:100px; line-height:110px; color:#202021;}
+	.caption .row-5{font-size:58px; line-height:80px; color:#b0c715; margin-top:-22px;}
+
+@media only screen and (max-width: 995px){
+	.slides_container{width:758px; height:337px;}
+	.slide{width:758px;}
+	.caption{width:370px; padding-top:30px; letter-spacing:-4px;}
+	.caption .row-1{font-size:90px; line-height:90px;}
+	.caption .row-2{font-size:60px; line-height:60px; margin-top:-18px;}
+	.caption .row-3{font-size:70px; line-height:70px; margin-top:-16px; letter-spacing:-5px;}
+	.caption .row-4{font-size:80px; line-height:90px;}
+	.caption .row-5{font-size:40px; line-height:60px; margin-top:-18px;}
+
+}
+@media only screen and (max-width: 767px){
+	#slides{border:1px solid #d0d0d0; border-radius:16px;}
+	.slides_container{width:418px; height:186px;}
+	.slide{width:418px;}
+		.slide img{border-radius:16px;}
+	.caption{display:none !important;}
+	.pagination{bottom:20px; right:20px;}
+}
+@media only screen and (max-width: 479px){
+	.slides_container{width:298px; height:132px;}
+	.slide{width:298px;}
+	.pagination{bottom:12px; right:12px;}
+}

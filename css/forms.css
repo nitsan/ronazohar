@@ -1,0 +1,153 @@
+/*---- Subscribe form ----*/
+#subs-form {
+    background: url(../images/search-form-tail.gif) 0 0 repeat-x #fbfbfb;
+    border: 1px solid #eaeaea;
+    border-radius: 16px;
+    font: 13px/18px Arial, Helvetica, sans-serif;
+    position: relative;
+    vertical-align: top;
+}
+
+    #subs-form fieldset {
+        border: none;
+        padding: 33px 25px 37px 24px;
+        overflow: hidden;
+    }
+
+    #subs-form label {
+        display: block;
+        margin-bottom: 13px;
+    }
+
+    #subs-form input {
+        padding: 7px 12px 8px;
+        background: #fff;
+        border: 1px solid #dcdcdc;
+        font: 14px Arial, Helvetica, sans-serif;
+        color: #696969;
+        margin: 0;
+        outline: none;
+        width: 204px;
+        border-radius: 14px;
+    }
+
+    #subs-form .button {
+        padding: 6px 20px 7px;
+    }
+
+        #subs-form .button:first-child {
+            margin-right: 4px;
+        }
+/***** contact form *****/
+#contact-form {
+    position: relative;
+    vertical-align: top;
+    width: 100%;
+    z-index: 1;
+}
+
+    #contact-form fieldset {
+        border: none;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #contact-form label {
+        display: block;
+        min-height: 39px;
+        position: relative;
+    }
+
+    #contact-form .message {
+        min-height: 263px;
+    }
+
+    #contact-form em {
+        display: inline-block;
+        font-style: normal;
+        overflow: hidden;
+        padding-top: 6px;
+        width: 66px;
+    }
+
+    #contact-form input, #contact-form textarea {
+        padding: 7px 9px 8px;
+        margin: 0;
+        font: 13px Arial, Helvetica, sans-serif;
+        color: #696969;
+        background: #fff;
+        outline: none;
+        border: 1px solid #e3e3e3;
+        width: 540px;
+        border-radius: 14px;
+    }
+
+    #contact-form .area .error {
+        float: none;
+    }
+
+    #contact-form textarea {
+        height: 233px;
+        resize: none;
+        overflow: auto;
+    }
+
+    #contact-form .success {
+        display: none;
+        margin-bottom: 15px;
+    }
+
+    #contact-form .error,
+    #contact-form .empty {
+        color: #f00;
+        font-size: 11px;
+        line-height: 14px;
+        display: none;
+        overflow: hidden;
+        margin-bottom: 5px;
+        padding-left: 70px;
+    }
+
+    #contact-form .buttons-wrapper {
+        text-align: right;
+        position: relative;
+    }
+
+        #contact-form .buttons-wrapper a {
+            padding: 6px 22px 7px;
+        }
+
+@media only screen and (max-width: 995px) {
+    #subs-form fieldset {
+        padding: 20px;
+    }
+
+    #subs-form input {
+        width: 168px;
+    }
+
+    #subs-form .button {
+        padding: 6px 12px 7px;
+    }
+
+    #contact-form input, #contact-form textarea {
+        width: 412px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #subs-form input {
+        width: 232px;
+    }
+
+    #contact-form input, #contact-form textarea {
+        width: 330px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    #contact-form input, #contact-form textarea {
+        width: 210px;
+    }
+}
