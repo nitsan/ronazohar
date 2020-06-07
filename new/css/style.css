@@ -1,3 +1,7 @@
+:root {
+  --main-bg-color: #afc615;
+}
+
 /* Base */
 body {
   line-height: 1.7;
@@ -61,7 +65,6 @@ h1, h2, h3, h4, h5, h6 {
     content: "";
     top: 0;
     left: 0;
-    top: 0;
     right: 0;
     z-index: 21;
     background: rgba(0, 0, 0, 0.2); }
@@ -87,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 .form-control {
   height: 47px; }
   .form-control:active, .form-control:focus {
-    border-color: #6610f2; }
+    border-color: var(--main-bg-color); }
   .form-control:hover, .form-control:active, .form-control:focus {
     -webkit-box-shadow: none !important;
     box-shadow: none !important; }
@@ -106,12 +109,12 @@ h1, h2, h3, h4, h5, h6 {
   position: relative; }
   .site-section-heading:before {
     content: "";
-    left: 0%;
+    left: 0;
     top: 0;
     position: absolute;
     width: 40px;
     height: 2px;
-    background: #6610f2; }
+    background: var(--main-bg-color); }
   .site-section-heading.text-center:before {
     content: "";
     left: 50%;
@@ -122,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     width: 40px;
     height: 2px;
-    background: #6610f2; }
+    background: var(--main-bg-color); }
 
 .border-top {
   border-top: 1px solid #ced4da !important; }
@@ -193,7 +196,7 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
 
 .site-navbar {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   width: 100%; }
   .site-navbar .site-logo {
     font-weight: 200;
@@ -201,7 +204,6 @@ h1, h2, h3, h4, h5, h6 {
     top: -7px;
     position: relative; }
     .site-navbar .site-logo a {
-      font-weight: 200;
       color: #fff;
       font-size: 20px;
       font-weight: bold;
@@ -284,7 +286,7 @@ h1, h2, h3, h4, h5, h6 {
           transition: 0s all;
           color: #343a40; }
           .site-navbar .site-navigation .site-menu .has-children .dropdown a.active {
-            color: #6610f2; }
+            color: var(--main-bg-color); }
         .site-navbar .site-navigation .site-menu .has-children .dropdown .active > a {
           color: #fff !important; }
         .site-navbar .site-navigation .site-menu .has-children .dropdown > li {
@@ -394,12 +396,12 @@ h1, h2, h3, h4, h5, h6 {
       position: relative;
       color: #212529; }
       .site-mobile-menu .site-nav-wrap a.active, .site-mobile-menu .site-nav-wrap a:hover {
-        color: #6610f2; }
+        color: var(--main-bg-color); }
     .site-mobile-menu .site-nav-wrap li {
       position: relative;
       display: block; }
       .site-mobile-menu .site-nav-wrap li.active > a {
-        color: #6610f2; }
+        color: var(--main-bg-color); }
     .site-mobile-menu .site-nav-wrap .arrow-collapse {
       position: absolute;
       right: 0px;
@@ -469,7 +471,7 @@ h1, h2, h3, h4, h5, h6 {
     .sticky-wrapper .site-navbar a.active {
       color: #fff; }
   .sticky-wrapper.is-sticky .site-navbar {
-    background-color: #6610f2; }
+    background-color: var(--main-bg-color); }
     .sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu > li {
       display: inline-block;
       padding: 10px 5px; }
@@ -562,7 +564,7 @@ h1, h2, h3, h4, h5, h6 {
     .heading-wrap h2:before {
       width: 80px;
       height: 2px;
-      background: #6610f2;
+      background: var(--main-bg-color);
       content: "";
       position: absolute;
       top: 0;
@@ -629,7 +631,7 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 20px;
       color: #fff;
       display: inline-block;
-      background: #6610f2;
+      background: var(--main-bg-color);
       width: 100px;
       height: 100px;
       line-height: 100px;
@@ -784,7 +786,7 @@ h1, h2, h3, h4, h5, h6 {
 .filters .btn.active {
   background: transparent !important;
   color: #000 !important;
-  border-color: #6610f2 !important; }
+  border-color: var(--main-bg-color) !important; }
 
 .site-footer ul li {
   line-height: 1.3;
@@ -792,7 +794,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block; }
 
 .form-subscribe .btn.btn-primary:hover, .form-subscribe .btn.btn-primary:active, .form-subscribe .btn.btn-primary:focus {
-  background: #6610f2 !important;
+  background: var(--main-bg-color) !important;
   color: #fff; }
 
 .pricing .price {
@@ -826,7 +828,7 @@ h1, h2, h3, h4, h5, h6 {
       left: 0;
       top: .4em; }
     .accordion .accordion-item h2 a[aria-expanded="true"] {
-      color: #6610f2; }
+      color: var(--main-bg-color); }
       .accordion .accordion-item h2 a[aria-expanded="true"]:before {
         content: "\f147"; }
 
