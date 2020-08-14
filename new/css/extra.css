@@ -1,3 +1,10 @@
 .heb {
   direction: rtl;
 }
+.fright {
+  float: right;
+}
+
+.talign-right {
+  text-align: right;
+}
