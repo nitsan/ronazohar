@@ -23,7 +23,7 @@
     
 
     <link rel="stylesheet" href="css/style.css">
-    
+
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   
@@ -455,15 +455,21 @@
       <div class="container heb">
         <div class="row">
           <div class="col-lg-6">
-            <form action="#" method="post">
+            <form id="contactForm" action>
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <label for="name" class="fright">שם מלא</label>
-                  <input type="text" id="name" class="form-control ">
+                  <label for="name" class="float-right">שם מלא</label>
+                  <input type="text" id="name" class="form-control">
+                  <div class="invalid-feedback text-right">
+                    שם לא תקין.
+                  </div>
                 </div>
                 <div class="col-md-6 form-group">
-                  <label for="phone" class="fright">טלפון</label>
-                  <input type="tel" id="phone" class="form-control ">
+                  <label for="phone" class="float-right">טלפון</label>
+                  <input type="tel" id="phone" class="form-control">
+                  <div class="invalid-feedback text-right">
+                    מספר טלפון לא תקין.
+                  </div>
                 </div>
               </div>
               <div class="row">
@@ -473,28 +479,43 @@
               </div>
               <div class="row">
                 <div class="col-md-12 form-group">
-                  <label for="email" class="fright">אימייל</label>
-                  <input type="email" id="email" class="form-control ">
+                  <label for="email" class="float-right">אימייל</label>
+                  <input type="email" id="email" class="form-control">
+                  <div class="invalid-feedback text-right">
+                    כתובת דואר לא תקינה.
+                  </div>
                 </div>
               </div>
-              <div class="row">
+              <div class="form-row">
                 <div class="col-md-12 form-group">
-                  <label for="message" class="fright">כתוב הודעה</label>
+                  <label for="message" class="float-right">כתוב הודעה</label>
                   <textarea name="message" id="message" class="form-control " cols="30" rows="8"></textarea>
+                  <div class="invalid-feedback text-right">
+                    הודעה לא תקינה.
+                  </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col form-group">
-                  <input type="submit" value="שלח הודעה" class="btn btn-primary">
+                  <button id="sendBtn" class="btn btn-primary" type="submit">
+                    <span class="spinner-grow spinner-grow-sm d-none" role="status" aria-hidden="true"></span>
+                    שלח הודעה
+                  </button>
                 </div>
               </div>
             </form>
+            <div id="successMessageSent" class="alert alert-success text-right d-none" role="alert">
+              ההודעה נשלחה בהצלחה, נחזור אלייך בקרוב!
+            </div>
+            <div id="errorMessageSent" class="alert alert-danger text-right d-none" role="alert">
+              שגיאה בשליחת ההודעה, אנא נסו שוב מאוחר יותר
+            </div>
           </div>
           
           <div class="col-lg-6 pl-2 pl-lg-5">
 
             <div class="col-md-8 mx-auto contact-form-contact-info">
-              <h4 class="mb-5 talign-right">פרטי קשר</h4>
+              <h4 class="mb-5 text-right">פרטי קשר</h4>
               <div class="d-flex">
                 <span class="ion-ios-location icon mr-5"></span>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13539.13018954712!2d34.7958991!3d31.9667955!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbaa5aafa3abb4b50!2z16jXldeg15Qg15bXlNeoIC0g16HXmNeV15PXmdeVINec16TXmdec15DXmNeZ16Eg157Xm9ep15nXqNeZ150!5e0!3m2!1siw!2sil!4v1580548424068!5m2!1siw!2sil" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
@@ -626,6 +647,8 @@
   
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script src="js/form.js"></script>
      
   </body>
 </html>
