@@ -551,6 +551,12 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transform: translateX(0%);
     -ms-transform: translateX(0%);
     transform: translateX(0%); }
+  .heading-wrap.text-right h2:before {
+    right: 0;
+    left: initial;
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%); }
   .heading-wrap h2 {
     font-size: 50px;
     position: relative;
