@@ -386,6 +386,7 @@ h1, h2, h3, h4, h5, h6 {
     height: calc(100vh - 52px);
     padding-bottom: 150px; }
   .site-mobile-menu .site-nav-wrap {
+    text-align: right;
     padding: 0;
     margin: 0;
     list-style: none;
